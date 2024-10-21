@@ -541,3 +541,120 @@ form a {
 .salir-programa-btn:hover {
     background-color: #555;
 }
+
+.program-section {
+    display: flex;
+    background-color: #cfa7a7;
+    padding: 40px;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.menu-lateral a {
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 16px; /* Asegura que el tamaño de la fuente sea consistente */
+}
+
+.menu-lateral a:hover {
+    text-decoration: none; /* Asegura que no haya subrayado al pasar el ratón */
+}
+
+.menu-btn {
+    background-color: #5c5c5c;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 16px; /* Asegura que el tamaño de la fuente sea consistente */
+}
+
+.menu-btn:hover {
+    background-color: #7a7a7a;
+}
+
+.content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+    color: white;
+}
+
+.image-container {
+    margin: 20px auto;
+}
+
+.image-container img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.content-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-text {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-text p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.image-estres {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+}
+
+.image-estres img {
+    max-width: 100%;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.continue-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 5rem;
+}
+
+.continue-button:hover {
+    background-color: #555;
+}
