@@ -308,3 +308,44 @@ form a {
     border-radius: 50%;
     
 }
+
+/* Sección inferior: Opciones de cierre */
+.seccion-inferior {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.opciones {
+    margin: 20px 0;
+}
+
+.boton-cierre {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000601;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton-cierre:hover {
+    background-color: #0201038e;
+}
+
+#modal-cerrar-sesion .modal-content {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#modal-cerrar-sesion .modal-content button{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background: #2C2C2C;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
