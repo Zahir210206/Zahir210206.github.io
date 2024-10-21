@@ -350,6 +350,52 @@ form a {
     cursor: pointer;
 }
 
+.info-section {
+    background-color: #cfa7a7;
+    padding: 40px;
+    text-align: center;
+}
+
+.info-section h1 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: black;
+}
+
+.mission-vision{
+    text-align: right;
+}
+
+.mission-vision .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+.mission-vision .container > div {
+    max-width: 20rem;
+    text-align: center;
+    text-align: justify;
+}
+
+.mission h2, .vision h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mission p, .vision p {
+    font-size: 16px;
+    color: #555;
+}
 
 .respiracion-section {
     display: flex;
@@ -477,6 +523,16 @@ form a {
     background-color: #333;
     color: white;
     border: none;
+}
+
+.feature_informacion {
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 5rem;
+}
+
+.continue-button:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
