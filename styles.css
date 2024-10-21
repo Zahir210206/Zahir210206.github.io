@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+header nav ul {
+    width: 100%;
+    padding: 0.5rem 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 0 1rem;
+}
+
+header nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li:nth-child(5) {
+    margin-left: auto;
+}
+
+header nav ul li button,
+header nav ul li input {
+    justify-content: flex-end;
+}
+
+header nav ul img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header nav ul li input {
+    border-radius: 5px;
+    width: 12rem;
+    padding: .5rem;
+    outline: none;
+    height: 2rem;
+    border: none;
+}
+
+header nav ul li button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background: #2C2C2C;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+main section:nth-child(odd){
+    background-color: #cfa7a7;
+}
+
+main section:nth-child(even){
+    background-color: #e5e5e5;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+}
+
+.hero-content img {
+    width: 30%;
+    height: 30%;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.hero-info .hero-text-info {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+
+.hero-button-info {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .programs {
+    padding: 2rem;
+    text-align: center;
+}
+
+.program-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    width: 15rem;
+    height: 18rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card p {
+    margin-top: 0.5rem;
+}
+
+.card:nth-child(even){
+    background-color: #AFD0D6;
+}
+
+.card:nth-child(odd){
+    background-color: #BFB6BB;
+}
+
+main .about-us {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about-us p{
+    width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top:1rem;
+    font-size: 1.1rem;
+}
+
+main .information {
+    padding: 2rem 20rem;
+    display: flex;
+    gap: 5rem;
+}
+
+main .information > div{
+    text-align: center;
+}
+
+main .information > div p{
+    text-align: justify;
+    font-size: 1.1rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 5px;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+.close i {
+    cursor: pointer;
+}
+
+.close i:hover {
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 0.4rem;
+}
+
+form button {
+    padding: 0.8rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #555;
+    transition: all 0.3s ease;
+}
+
+form a {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.social-login a i {
+    font-size: 1.5rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

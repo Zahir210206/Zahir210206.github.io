@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Psicología Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./assets/images/logo.jpg" alt="Logo"></li>
+                <li><a href="./pages/nuevo.html">Inicio</a></li>
+                <li><a href="./pages/informacion.html">Información Importante</a></li>
+                <li><a href="./pages/bienvenida.html">Sesiones con el chatbot</a></li>
+                <li><input type="text" name="buscador" placeholder="Buscar..."></li>
+                <li><button id="login-button">Iniciar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="./assets/images/main.jpg" alt="Ilustración acerca salud mental">
+                <div class="hero-info">
+                    <p class="hero-text-info">Tu salud mental es tan importante como tu salud física y ahora es más
+                        fácil cuidarla con nuestra aplicación de psicología virtual. A través de un chatbot inteligente,
+                        puedes hablar de tus pensamientos y emociones de la manera que prefieras: con texto, audio o
+                        video,
+                        desde cualquier lugar y en cualquier momento
+                        Dale prioridad a tu bienestar mental y empieza hoy mismo. Con un solo clic, estarás más cerca de
+                        una mente más tranquila y una vida más plena
+                    </p>
+
+                    <button class="hero-button-info">Leer Más</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="programs">
+            <h2>Nuestros programas</h2>
+            <div class="program-cards">
+                <div class="card">
+                    <img src="./assets/images/programa-1.jpg" alt="Gestión del Estrés">
+                    <p>Programa de Gestión del Estrés</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/programa-2.jpg" alt="Apoyo Emocional">
+                    <p>Programa de Apoyo Emocional</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/programa-3.jpg" alt="Apoyo en Crisis">
+                    <p>Programa de Apoyo En Crisis</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/programa-4.jpg" alt="Mindfulness">
+                    <p>Programa de Mindfulness</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para el formulario de login -->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <span class="close">
+                <i class="fa-solid fa-xmark close-modal"></i>
+            </span>
+
+            <form id="login-form" class="login-form">
+                <h2>Iniciar Sesión</h2>
+
+                <div class="input-user">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Usuario" autocomplete="off">
+                </div>
+
+                <div class="input-password">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" autocomplete="off">
+                </div>
+
+                <button type="submit">Iniciar Sesión</button>
+
+                <p>¿No tienes una cuenta? <a href="#" id="show-register-button">Regístrate</a></p>
+                <p>Iniciar sesión con:</p>
+
+                <div class="social-login">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para el formulario de registro -->
+    <div id="modal-register" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fa-solid fa-xmark close-modal"></i></span>
+            <form id="register-form" class="register-form">
+                <h2>Regístrate</h2>
+                <label for="firstname">Nombre</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Nombre" autocomplete="off">
+                <label for="lastname">Apellidos</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Apellidos" autocomplete="off">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" autocomplete="off">
+                <label for="reg-password">Contraseña</label>
+                <input type="password" id="reg-password" name="password" placeholder="Contraseña" autocomplete="off">
+                <button type="submit">Registrarse</button>
+                <p>¿Ya tienes una cuenta? <a href="#" id="show-login-button">Iniciar sesión</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("register-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const nombre = document.getElementById("firstname").value;
+            const email = document.getElementById("email").value;
+            localStorage.setItem('nombreUsuario', nombre);
+            localStorage.setItem("user", JSON.stringify({ nombre, email }));
+            window.location.href = "./pages/nuevo.html";
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/00bdc18b44.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
