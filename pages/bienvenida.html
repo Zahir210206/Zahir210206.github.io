@@ -9,7 +9,62 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="../assets/images/logo.jpg" alt="Logo"></li>
+                <li><a href="./nuevo.html">Inicio</a></li>
+                <li><a href="./informacion.html">Información Importante</a></li>
+                <li><a href="./bienvenida.html">Sesiones con el chatbot</a></li>
+                <li><input type="text" name="buscador" placeholder="Buscar..."></li>
+                <li><button id="login-button">Iniciar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="welcome-section">
+            <h1 id="welcome-message">Bienvenido, </h1>
+            <img src="../assets/images/usuario.jpg" alt="Imagen de Perfil" class="perfil-image">
+            <p>¿Qué haremos hoy?</p>
+        </section>
+
+        <section class="programs">
+            <h2>Elige un programa</h2>
+            <div class="program-cards">
+                <a href="estres.html" class="card-link">
+                    <div class="card">
+                        <img src="../assets/images/programa-1.jpg" alt="Gestión del Estrés">
+                        <p>Programa de Gestión del Estrés</p>
+                    </div>
+                </a>
+
+                <div class="card">
+                    <img src="../assets/images/programa-2.jpg" alt="Apoyo Emocional">
+                    <p>Programa de Apoyo Emocional</p>
+                </div>
+
+                <div class="card">
+                    <img src="../assets/images/programa-3.jpg" alt="Apoyo en Crisis">
+                    <p>Programa de Apoyo En Crisis</p>
+                </div>
+
+                <div class="card">
+                    <img src="../assets/images/programa-4.jpg" alt="Mindfulness">
+                    <p>Programa de Mindfulness</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        // Recuperar el nombre del usuario y mostrarlo en la bienvenida
+        const nombreUsuario = localStorage.getItem('nombreUsuario');
+        const welcomeMessage = document.getElementById('welcome-message');
+        welcomeMessage.textContent = `Bienvenido, ${nombreUsuario || 'Usuario'}!`;
+    </script>
 </body>
 
 </html>

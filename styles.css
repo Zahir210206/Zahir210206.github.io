@@ -291,3 +291,20 @@ form a {
     flex-direction: column;
     gap: 10px;
 }
+
+.welcome-section{
+    background-color: #cfa7a7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.perfil-image{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
